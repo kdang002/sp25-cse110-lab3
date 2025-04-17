@@ -2,12 +2,12 @@
 name: Set Up For Lab 3
 about: You must complete Lab 2 before doing this one.
 title: ''
-labels: ''
-assignees: ''
+labels: documentation, good first issue
+assignees: kdang002
 
 ---
 
-##Make a copy of your Lab 2 repository:
+## Make a copy of your Lab 2 repository:
 - Create a new public repository called “sp25-cse110-lab3” on GitHub
 - In your local terminal (replace <> with your Lab 2 repo name, without the <>):
 cd <lab2-repo-name>
