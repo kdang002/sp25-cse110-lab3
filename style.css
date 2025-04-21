@@ -20,11 +20,18 @@ body h1
 
     
     border: 3px solid rgb(150, 120, 100); /* Adds a solid border */
-    border-radius: 20px; /* Chamfers the corners */
+    border-radius: 10px; /* Chamfers the corners */
     width: fit-content; /* Ensures the h1 width adjusts to its content */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for a modern look */
     font-family:'Courier New', Courier, monospace;
 }
+
+h1 + p 
+{
+    margin-top: 10px;
+    color: #7b4d00;
+}
+  
 
 body h2, h3
 {
@@ -32,10 +39,16 @@ body h2, h3
     font-family:'Courier New', Courier, monospace;
     padding: 5px 10px; /* Adds spacing inside the h1 */
     border: 3px solid rgb(150, 120, 100); /* Adds a solid border */
-    border-radius: 20px; /* Chamfers the corners */
+    border-radius: 10px; /* Chamfers the corners */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for a modern look */
 }
 
+h2 ~ p 
+{
+    font-style: italic;
+    color: #333;
+}
+  
 body ul, ol
 {
     width: fit-content; 
@@ -54,7 +67,7 @@ body video, img
 {
     position: static; /* Default positioning, follows the normal document flow */
     border: 5px solid rgb(150, 120, 100); /* Adds a solid border */
-    border-radius: 20px; /* Chamfers the corners */
+    border-radius: 10px; /* Chamfers the corners */
     width: fit-content; /* Ensures the h1 width adjusts to its content */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for a modern look */
 }
@@ -65,7 +78,7 @@ form {
     font-family: 'Courier New', Courier, monospace; /* Matches the font style */
     padding: 10px 20px; /* Adds spacing inside the form */
     border: 3px solid rgb(150, 120, 100); /* Adds a solid border */
-    border-radius: 20px; /* Chamfers the corners */
+    border-radius: 10px; /* Chamfers the corners */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
     background-color: rgb(250, 240, 230); /* Matches the body background */
     margin: 3vh auto; /* Centers the form vertically and horizontally */
@@ -89,3 +102,61 @@ form button {
 form button:hover {
     background-color: rgb(180, 160, 140); /* Slightly darker shade for hover effect */
 }
+
+.unordered_list
+{
+    border: 5px solid rgb(190, 125, 81);
+    border-radius: 10px;
+}
+
+ul.unordered_list 
+{
+    border: 2px solid #a87b5a;
+    & > li 
+    {
+      padding: 6px;
+    }
+}
+
+
+
+#green_underline 
+{
+    display: inline-block;                /* Needed for border-bottom to wrap text */
+    border-bottom: 3px solid rgb(69, 201, 29); /* Custom underline */
+    padding-bottom: 2px;                 /* Optional spacing */
+}
+
+form input[placeholder="Enter text here"]
+{
+    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+form .input_box
+{
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+p.highlight 
+{
+    background-color: #fff3d1;
+    padding: 8px;
+    border-left: 5px solid orange;
+}
+  
+div:has(form) {
+    border: 2px dashed #bbb;
+    padding: 1rem;
+    background-color: #fefefe;
+  }
+  
+div:has(+ img) 
+{
+    margin-bottom: 2rem;
+    background-color: #fcf0e3;
+}
+
+  
